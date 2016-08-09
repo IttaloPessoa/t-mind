@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_register"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/register_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_appname"/>
+
+                <br.com.ufpb.ittalopessoa.t_mind.util.RobotoMedium
+                    android:id="@+id/app_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/min_max_margin"
+                    android:text="@string/app_name_register"
+                    android:textColor="@color/md_red_500"
+                    android:textSize="@dimen/fontsize_body_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="vertical">
+
+                <br.com.ufpb.ittalopessoa.t_mind.util.RobotoMedium
+                    android:id="@+id/text_new_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="start"
+                    android:text="@string/new_account"
+                    android:textColor="@color/md_text"
+                    android:textSize="@dimen/fontsize_title" />
+
+                <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                    android:id="@+id/text_new_account_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/min_margin"
+                    android:gravity="start"
+                    android:text="@string/new_account_description"
+                    android:textColor="@color/md_secondary_text_icons"
+                    android:textSize="@dimen/fontsize_subhead" />
+
+            </LinearLayout>
+
+            <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                android:id="@+id/text_new_account_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="start"
+                android:text="@string/about_count"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="@dimen/fontsize_subhead" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textInputName"
+                android:layout_marginTop="@dimen/med_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="@string/hint_name"
+                    android:textSize="@dimen/fontsize_subhead"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textInputLastName"
+                android:layout_marginTop="@dimen/min_max_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textSobrenome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="@dimen/fontsize_subhead"
+                    android:hint="@string/hint_lastname"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textInputMail"
+                android:layout_marginTop="@dimen/min_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_username"
+                    android:inputType="text"
+                    android:textSize="@dimen/fontsize_subhead"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textInputPassword"
+                android:layout_marginTop="@dimen/min_max_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/senha_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    android:imeActionId="@+id/register"
+                    android:imeActionLabel="@string/action_register_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/fontsize_subhead"
+                    android:maxLines="1"
+                    android:maxEms="16"
+                    android:minEms="4"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/med_margin"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/email_register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_button_height"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/min_margin"
+                    android:background="@drawable/raised_button_border"
+                    android:text="@string/text_button_register"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_red_700" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

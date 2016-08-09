@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/btn_close_exerc3"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/description_image"
+            android:padding="4dp"
+            android:src="@drawable/ic_close" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_exerc3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="10"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:indeterminate="false"
+            android:soundEffectsEnabled="true" />
+
+    </LinearLayout>
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoMedium
+        android:id="@+id/title_exer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Título da questão"
+        android:textColor="@color/md_text"
+        android:textSize="@dimen/fontsize_title" />
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+        android:id="@+id/subhead_exer3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:text="Complemento da questão"
+        android:textColor="@color/md_secondary_text_icons"
+        android:textSize="@dimen/fontsize_subhead" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escreva aqui"
+            android:id="@+id/entrada_exerc3"
+            android:textColorHint="@color/md_secondary_text_icons"
+            android:textColor="@color/md_text"
+            android:textSize="@dimen/fontsize_subhead"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_exerc2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_primary_grey"
+        android:padding="8dp"
+        android:text="Verficar"
+        android:textAllCaps="true"
+        android:textColor="@color/md_text_white" />
+
+</LinearLayout>

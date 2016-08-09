@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/size_ico_slide_one"
+        android:layout_height="@dimen/size_ico_slide_one_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_appname" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_above="@+id/btn_sing_in"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/raised_button_red"
+        android:padding="8dp"
+        android:text="@string/button_start_slide_04"
+        android:textAllCaps="true"
+        android:textColor="@color/md_text_white" />
+
+    <Button
+        android:id="@+id/btn_sing_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/raised_button_border"
+        android:padding="8dp"
+        android:text="@string/button_sing_in_slide_04"
+        android:textAllCaps="true"
+        android:textColor="@color/md_red_700" />
+
+</RelativeLayout>

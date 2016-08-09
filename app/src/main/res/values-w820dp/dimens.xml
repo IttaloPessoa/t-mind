@@ -1,0 +1,40 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">@dimen/default_margin</dimen>
+    <dimen name="activity_vertical_margin">@dimen/default_margin</dimen>
+    <dimen name="min_max_margin">16dp</dimen>
+    <dimen name="min_margin">32dp</dimen>
+    <dimen name="default_margin">64dp</dimen>
+    <dimen name="med_margin">96dp</dimen>
+    <dimen name="max_margin">128dp</dimen>
+    <dimen name="max_exp_margin">192dp</dimen>
+
+    <!-- Default size typeface, per the Android Design guidelines. -->
+    <dimen name="fontsize_button">14sp</dimen>
+    <dimen name="fontsize_caption">12sp</dimen>
+    <dimen name="fontsize_body_1">14sp</dimen>
+    <dimen name="fontsize_body_2">14sp</dimen>
+    <dimen name="fontsize_subhead">16sp</dimen>
+    <dimen name="fontsize_title">20sp</dimen>
+    <dimen name="fontsize_headline">24sp</dimen>
+    <dimen name="fontsize_display_0">40sp</dimen>
+    <dimen name="fontsize_display_1">34sp</dimen>
+    <dimen name="fontsize_display_2">45sp</dimen>
+    <dimen name="fontsize_display_3">56sp</dimen>
+    <dimen name="fontsize_display_4">112sp</dimen>
+
+    <!-- Default size components, per the Android Design guidelines. -->
+    <dimen name="size_ico_splash">320dp</dimen>
+    <dimen name="size_ico_splash_land">96dp</dimen>
+    <dimen name="size_ico_slide_one">256dp</dimen>
+    <dimen name="size_ico_slide_one_height">128dp</dimen>
+    <dimen name="size_ico_slide_two">256dp</dimen>
+    <dimen name="size_ico_slide_three">256dp</dimen>
+    <dimen name="size_ico_slide_three_height">64dp</dimen>
+    <dimen name="size_ico_button_main">180dp</dimen>
+    <dimen name="size_ico_image_level">256dp</dimen>
+    <dimen name="size_ico_image_level_land">156dp</dimen>
+
+</resources>

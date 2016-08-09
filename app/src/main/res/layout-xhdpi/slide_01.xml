@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/default_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/size_ico_slide_one"
+        android:layout_height="@dimen/size_ico_slide_one_height"
+        android:src="@drawable/ic_appname"/>
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/slide_01_title"
+        android:textColor="@color/md_red_700"
+        android:textSize="@dimen/fontsize_title" />
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:id="@+id/subtitle_slide1"
+        android:text="@string/slide_01_subtitle"
+        android:textColor="@color/md_red_300"
+        android:textSize="@dimen/fontsize_title" />
+
+</LinearLayout>

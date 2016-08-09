@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/min_margin"
+    android:paddingBottom="@dimen/min_margin"
+    android:paddingLeft="@dimen/max_margin"
+    android:paddingRight="@dimen/max_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/btn_close_exerc1"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/description_image"
+            android:padding="4dp"
+            android:src="@drawable/ic_close" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_exerc1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="10"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:indeterminate="false"
+            android:soundEffectsEnabled="true" />
+
+    </LinearLayout>
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoMedium
+        android:id="@+id/title_exer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Título da questão"
+        android:textColor="@color/md_text"
+        android:textSize="@dimen/fontsize_title" />
+
+    <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+        android:id="@+id/subhead_exer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Complemento da questão"
+        android:textColor="@color/md_secondary_text_icons"
+        android:textSize="@dimen/fontsize_subhead" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item1_exerc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/raised_button_border_grey"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_item1_exerc1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_boy" />
+
+            <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                android:id="@+id/text_item1_exerc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Item 1"
+                android:textSize="@dimen/fontsize_body_1"
+                android:textColor="@color/md_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item2_exerc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/raised_button_border_grey"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_item2_exerc1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_boy" />
+
+            <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                android:id="@+id/text_item2_exerc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Item 1"
+                android:textSize="@dimen/fontsize_body_1"
+                android:textColor="@color/md_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item3_exerc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/raised_button_border_grey"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_item3_exerc1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_boy" />
+
+            <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                android:id="@+id/text_item3_exerc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Item 3"
+                android:textSize="@dimen/fontsize_body_1"
+                android:textColor="@color/md_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item4_exerc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/raised_button_border_grey"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_item4_exerc1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_boy" />
+
+            <br.com.ufpb.ittalopessoa.t_mind.util.RobotoRegular
+                android:id="@+id/text_item4_exerc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Item 4"
+                android:textSize="@dimen/fontsize_body_1"
+                android:textColor="@color/md_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exerc1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_primary_grey"
+        android:padding="8dp"
+        android:text="Verficar"
+        android:textAllCaps="true"
+        android:textColor="@color/md_text_white" />
+
+</LinearLayout>
